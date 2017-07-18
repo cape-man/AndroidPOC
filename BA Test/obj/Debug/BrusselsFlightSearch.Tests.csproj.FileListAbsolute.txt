@@ -1,0 +1,8 @@
+C:\Users\capeuser\Source\Repos\Brussels-Android\BA Test\bin\Debug\UITest1.dll
+C:\Users\capeuser\Source\Repos\Brussels-Android\BA Test\bin\Debug\UITest1.pdb
+C:\Users\capeuser\Source\Repos\Brussels-Android\BA Test\bin\Debug\nunit.framework.dll
+C:\Users\capeuser\Source\Repos\Brussels-Android\BA Test\bin\Debug\Xamarin.UITest.dll
+C:\Users\capeuser\Source\Repos\Brussels-Android\BA Test\bin\Debug\nunit.framework.xml
+C:\Users\capeuser\Source\Repos\Brussels-Android\BA Test\bin\Debug\Xamarin.UITest.xml
+C:\Users\capeuser\Source\Repos\Brussels-Android\BA Test\obj\Debug\UITest1.dll
+C:\Users\capeuser\Source\Repos\Brussels-Android\BA Test\obj\Debug\UITest1.pdb
