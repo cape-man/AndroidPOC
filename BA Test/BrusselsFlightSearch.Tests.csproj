@@ -64,5 +64,11 @@
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Brussels.FlightSearch\Brussels.FlightSearch.Android\Brussels.FlightSearch.Android.csproj">
+      <Project>{aeb8eed7-22bd-466d-8b2f-983501cbee66}</Project>
+      <Name>Brussels.FlightSearch.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

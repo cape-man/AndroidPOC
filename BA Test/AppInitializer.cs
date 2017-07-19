@@ -14,12 +14,12 @@ namespace UITest1
             {
                 return ConfigureApp
                     .Android
-                    .ApkFile("C:/Users/M1022206/Documents/Visual Studio 2015/Projects/UITest7/Brussels.FlightSearch.Android.apk")
+                    .ApkFile(@"D:\MyProjects\ABG\MDMS\POC_Working\NewSajitTest.git\trunk\Brussels.FlightSearch\Brussels.FlightSearch.Android\bin\Release\Brussels.FlightSearch.Android-Signed.apk")
                     .StartApp();
             }
 
             return ConfigureApp
-                .iOS
+                .Android
                 .StartApp();
         }
     }

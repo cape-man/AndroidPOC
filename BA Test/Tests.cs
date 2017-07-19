@@ -34,25 +34,23 @@ namespace UITest1
         [Test]
         public void NewTest()
         {
-            app.Screenshot("Screenshot");
-            app.DoubleTap(x => x.Text("Flight Status"));
-            app.Tap(x => x.Id("text1"));
-            app.EnterText(x => x.Class("EditText"), "B");
-            app.EnterText(x => x.Class("EntryEditText"), "S");
+            app.Screenshot("LandingScreen");
+            app.Tap(x => x.Text("Flight Status"));
+
+            app.Screenshot("SearchScreen");
+            app.Tap(x => x.Class("EditText"));
+            app.WaitForElement(x => x.Marked("Brussels Airlines"));
+            app.Tap(x => x.Marked("Brussels Airlines"));
             app.Tap(x => x.Class("EntryEditText").Index(1));
             app.EnterText(x => x.Class("EntryEditText").Index(1), "1234");
-            app.DoubleTap(x => x.Text("18/07/2017"));
-            app.DoubleTap(x => x.Id("button1"));
-            app.DoubleTap(x => x.Text("Brussels Airlines"));
-            app.Tap(x => x.Text("Lufthansa Airlines"));
-            app.EnterText(x => x.Class("EditText").Text("Brussels Airlines"), "s");
-            app.ClearText(x => x.Class("EntryEditText").Text("1234"));
-            app.Tap(x => x.Class("EntryEditText").Index(1));
-            app.EnterText(x => x.Class("EntryEditText").Index(1), "56");
-            app.DoubleTap(x => x.Class("AppCompatButton").Text("Search"));
-            app.Tap(x => x.Class("FormsImageView").Index(4));
-            app.Screenshot("Tapped on view with class: FormsImageView");
-            app.Tap(x => x.Class("FormsImageView").Index(8));
+            app.DismissKeyboard();
+            app.WaitForElement(x => x.Marked("Search").Index(1));
+            app.Tap(x => x.Marked("Search").Index(1));
+
+            app.Screenshot("FlightResult");
+            app.Tap(x => x.Class("FormsImageView"));
+            app.Tap(x => x.Class("FormsImageView").Index(2));
+
         }
     }
 }

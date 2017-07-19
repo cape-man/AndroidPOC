@@ -96,20 +96,20 @@
                             <Label Grid.Row="2" Grid.Column="0" VerticalOptions="Center" TextColor="{StaticResource textColor}" FontSize="11" Text="Flight Number"/>
                             <Label Grid.Row="4" Grid.Column="0" VerticalOptions="Center" TextColor="{StaticResource textColor}" FontSize="11" Text="Select Date"/>
 
-                            <Picker x:Name="pickerAirlines" Grid.Row="0" Grid.Column="1" TextColor="{StaticResource entrycolor}" BackgroundColor="#FFFFFFFF" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" 
+                            <Picker AutomationId="pickerAirlines" x:Name="PickerAirlines" Grid.Row="0" Grid.Column="1" TextColor="{StaticResource entrycolor}" BackgroundColor="#FFFFFFFF" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" 
                                     ItemsSource="{Binding FlightList}" 
                                     ItemDisplayBinding="{Binding AirlineName}" 
                                     SelectedItem="{Binding SelectedAirline}" />
 
                             <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Spacing="0">
-                                <Entry x:Name="TextAirlineCode" TextColor="{StaticResource entrycolor}"  BackgroundColor="#FFFFFFFF" WidthRequest="50" VerticalOptions="CenterAndExpand" Text="{Binding SelectedAirline.AirlineCode}" />
-                                <Entry x:Name="TextFlightNumber" TextColor="{StaticResource entrycolor}" Placeholder = "Enter Number"  PlaceholderColor="#FFE1E2E8" BackgroundColor="#FFFFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"  Text="{Binding SelectedAirline.FlightNumber}"/>
+                                <Entry AutomationId="textAirlineCode" x:Name="TextAirlineCode" TextColor="{StaticResource entrycolor}"  BackgroundColor="#FFFFFFFF" WidthRequest="50" VerticalOptions="CenterAndExpand" Text="{Binding SelectedAirline.AirlineCode}" />
+                                <Entry AutomationId="textFlightNumber" x:Name="TextFlightNumber" TextColor="{StaticResource entrycolor}" Placeholder = "Enter Number"  PlaceholderColor="#FFE1E2E8" BackgroundColor="#FFFFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"  Text="{Binding SelectedAirline.FlightNumber}"/>
                             </StackLayout>
 
-                            <DatePicker Grid.Row="4" Grid.Column="1" x:Name="StartDatePicker" BackgroundColor="#FFFFFFFF" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" 
+                            <DatePicker AutomationId="startDatePicker"  Grid.Row="4" Grid.Column="1" x:Name="StartDatePicker" BackgroundColor="#FFFFFFFF" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" 
                                         Date="{Binding flightSearchModel.StartDate}"  />
 
-                            <Button Grid.Row="6" Grid.Column="1" WidthRequest="150" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Clicked="Button_Clicked" TextColor="{StaticResource textColor}" BackgroundColor="#FFB62719" Text="Search"/>
+                            <Button AutomationId="buttonSearch"  x:Name="ButtonSearch"  Grid.Row="6" Grid.Column="1" WidthRequest="150" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Clicked="Button_Clicked" TextColor="{StaticResource textColor}" BackgroundColor="#FFB62719" Text="Search"/>
 
                         </Grid>
                     </Grid>
