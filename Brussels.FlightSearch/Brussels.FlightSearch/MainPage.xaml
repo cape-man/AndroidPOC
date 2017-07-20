@@ -73,7 +73,6 @@
                                 </Image.Source>
                             </Image>
                             <Label FontSize="Medium" TextColor="{StaticResource textColor}" Text="Search" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
-                          <Label FontSize="Medium" TextColor="{StaticResource textColor}" Text="Hello Raj" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
                           <Label FontSize="Medium" TextColor="{StaticResource textColor}" Text="Hello Client" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
                         </StackLayout>
 
