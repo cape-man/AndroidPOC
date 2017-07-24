@@ -73,7 +73,7 @@
                                 </Image.Source>
                             </Image>
                             <Label FontSize="Medium" TextColor="{StaticResource textColor}" Text="Search" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
-                          <Label FontSize="Medium" TextColor="{StaticResource textColor}" Text="Hello Simon" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+                          <Label FontSize="Medium" TextColor="{StaticResource textColor}" Text="Hello Simon Hello Olivier" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
                         </StackLayout>
 
                         <Grid x:Name="SearchCriteria"  Grid.Row="1">
